@@ -1,0 +1,6 @@
+<header id="home">
+    <h1>Welcome to One-Smart-Programmer's Resume</h1>
+    <button mat-icon-button (click)="this.buttonAction?.()" [ngClass]="{'mobile-button': this.onMobileScreen}" [disabled]="this.onMobileScreen">
+        <mat-icon>{{(!this.onMobileScreen) ? 'arrow_forward' : 'arrow_downward'}}</mat-icon>
+    </button>
+</header>

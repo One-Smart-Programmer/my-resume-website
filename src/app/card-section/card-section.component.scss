@@ -1,0 +1,96 @@
+@import '../../styles';
+
+mat-card {
+    position: relative;
+    background-color: $gray;
+
+    text-align: center;
+
+    mat-card-header {
+        display: block;
+        background: $dark-blue;
+        
+        mat-card-title {
+            margin-top: 10px;
+            padding-bottom: 20px;
+            position: sticky;
+        }
+
+        img {
+            margin-top: 10px;
+            scale: 2;
+        }
+    }
+
+    mat-card-content {
+        background-color: $white;
+        overflow-y: auto;
+
+        padding-bottom: 20px;
+    }
+
+    mat-card-actions {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    
+        button {
+            margin: 0 auto;
+            background-color: $light-blue;
+            border-radius: 0;
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 719px) {
+    mat-card {
+        display: flex;
+        flex-direction: column;
+        margin: 100px 0;
+
+        position: relative;
+        width: 100vw;
+
+        mat-card-content {
+            padding-bottom: 20px;
+        }
+
+        mat-card-actions {
+            height: 20px;
+            
+            button {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 720px ) {
+    mat-card {
+        width: 50vw;
+        max-height: 80vh;
+
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            background: transparent;
+            width: 0px;
+        }
+
+        top: 50%;
+        bottom: 50%;
+        translate: 50% -50%;
+    }
+
+    mat-list-item:hover {
+        background-color: $light-blue;
+        border-radius: 10px;
+    }
+
+}
+
+div {
+    white-space: pre-wrap !important;
+}

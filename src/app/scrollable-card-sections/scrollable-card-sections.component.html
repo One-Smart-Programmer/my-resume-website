@@ -1,0 +1,17 @@
+<cdk-virtual-scroll-viewport itemSize="200px" [orientation]="orientation">
+    <div>
+        <app-header [buttonAction]="this.scrollToFirstSection" [onMobileScreen]="this.onMobileScreen"></app-header>
+        <app-card-section 
+            *cdkVirtualFor="let section of sections; index as i" 
+            [reverseArrowAction]="scrollToPreviousSection?.(i + 1)" 
+            [forwardArrowAction]="!(i + 1 === sections.length) ? scrollToNextSection?.(i + 2) : undefined"
+            [cardId]="this.generateCardIdValueFromTitle(section.title)"
+            [list]="section.list"
+        >
+            <ng-container class="title">{{ section.title }}</ng-container>
+            <p class="content" *ngIf="section.content">
+                {{ section.content.trim() }}
+            </p>
+        </app-card-section>
+    </div>
+</cdk-virtual-scroll-viewport>

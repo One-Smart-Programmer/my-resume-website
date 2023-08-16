@@ -1,0 +1,48 @@
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="this.sideNavOpen" mode="push" color="primary">
+    <mat-action-list>
+      <button mat-list-item (click)="navigateToSection($event, 0, 'home')">
+        <mat-icon>home</mat-icon>
+        <div>Home</div>
+      </button>
+
+      <button mat-list-item (click)="navigateToSection($event, 1, 'about-me')">
+        <mat-icon>account_circle</mat-icon>
+        <div>About me</div>
+      </button>
+
+      <button mat-list-item (click)="navigateToSection($event, 2, 'skills')">
+        <mat-icon>build</mat-icon>
+        <div>Skills</div>
+      </button>
+
+      <button mat-list-item (click)="navigateToSection($event, 3, 'education')">
+        <mat-icon>school</mat-icon>
+        <div>Education</div>
+      </button>
+      
+      <button mat-list-item (click)="navigateToSection($event, 4, 'project-portfolio')">
+        <mat-icon>code</mat-icon>
+        <div>Project Portfolio</div>
+      </button>
+
+      <button mat-list-item (click)="navigateToSection($event, 5, 'contact-me')">
+        <mat-icon>call</mat-icon>
+        <div>Contact Me</div>
+      </button>
+    </mat-action-list>
+    
+    
+    
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color='primary'>
+      <button mat-icon-button (click)='sideNavToggle()'>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <app-scrollable-card-sections #scrollableSections [onMobileScreen]="this.onMobileScreen" [orientation]="(this.onMobileScreen) ? 'vertical' : 'horizontal'"></app-scrollable-card-sections>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

@@ -1,0 +1,52 @@
+@import '../styles';
+
+mat-sidenav-container {
+    height: 100%;
+    background-image: url('../assets/images/mountain-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 0;
+
+    mat-sidenav {
+        padding-top: 0;
+        background-color: $gray;
+        color: $white;
+    
+        mat-action-list {
+            padding-top: 0;
+
+            button {
+                padding: 30px;
+    
+                &:hover {
+                    background-color: $light-blue;
+                }
+            }
+        }
+    }
+
+    mat-sidenav-content {
+        margin: 0;
+        
+        mat-toolbar {
+            position: fixed;
+            z-index: 2;
+    
+            background-color: transparent;
+            color: $white;
+            
+            padding-top: 0px;
+
+            button {
+                background-color: $gray;
+
+                &:hover {
+                    background-color: $light-blue;
+                }
+            }
+        }
+    } 
+}
+
+
+
