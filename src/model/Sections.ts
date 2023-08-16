@@ -17,7 +17,7 @@ export let AppData = {
                  Welcome! My name is One-Smart-Programmer! 
                  I have 1.5 years of professional experience as a full stack web developer.
                  My main expierence is with Spring Boot and Angular. My hobbies include
-                 watching movies, programming, and playing video games!
+                 programming, playing video games, and watching movies!
 
                  `
             
@@ -53,7 +53,7 @@ export let AppData = {
             "title": "Project Portfolio",
             "list": [
                 "My Resume Website (Fall 2023)- This Angular application uses TypeScript and Angular Material.",
-                "Note Taking App (Comming Soon Fall 2023) - Angular application using TypeScript."
+                "Note Taking App (Coming Soon Fall 2023) - Angular application using TypeScript."
             ]
         },{
             "title": "Contact Me",
