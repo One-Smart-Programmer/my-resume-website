@@ -56,7 +56,7 @@ export let AppData = {
                 "Note Taking App (Coming Soon Fall 2023) - Angular application using TypeScript."
             ]
         },{
-            "title": "Contact Me",
+            "title": "Thank You",
             "content": 
                 `
 
